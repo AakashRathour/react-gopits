@@ -1,11 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: #28314a;
+  font-weight: 700;
+}
+
+a {
+  color: #fa742b;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8e939f;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300;
+}
+
+.Header {
+  background-color: transparent;
+  z-index: 9;
+  width: 100%;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.4s ease;
+}
+.Header .fixed {
+  position: fixed;
+  padding: 5px 0;
+  width: 100%;
+  z-index: 9;
+  background: #f0f0f0;
+}
+.Header .navbar {
+  background-color: transparent;
+  padding: 0;
+}
+.Header .navbar .navbar-brand img {
+  max-width: 130px;
+}
+.Header .navbar-nav .nav-item .nav-link {
+  color: #28314a;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  height: inherit;
+  color: #222;
+  display: inline-block;
+}
+.Header .navbar-nav .nav-item .nav-link:hover {
+  color: #fa742b;
+}
+.Header .navbar-nav .nav-item .nav-link span {
+  border: 2px solid #fa742b;
+  border-radius: 3px;
+  padding: 9px 10px;
+  background-color: #fa742b;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.Banner {
+  padding: 140px 0 40px;
+  background-image: url("./assets/images/bg-dotted.png");
+  position: relative;
+}
+.Banner:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/mapbg.jpg");
+  z-index: -1;
+}
+.Banner .Banner_Content h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.Banner .Google_Icon {
+  display: inline-block;
+  margin-top: 25px;
+}
+.Banner .Banner-Image img {
+  width: 100%;
+}
+
+/* Footer */
+
+.Footer .Footer_menu {
+  padding: 40px 0;
+}
+.Footer .logoFooter {
+  max-width: 130px;
+  margin-bottom: 10px;
+}
+.Footer .Support li {
+  margin-bottom: 5px;
+}
+.Footer .Support li img {
+  max-width: 18px;
+}
+.Footer .Footer_socialMedia li {
+  padding: 5px 15px;
+}
+.Footer .Footer_socialMedia li img {
+  max-width: 18px;
+}
+.Footer .Footer_App_Download img {
+  max-height: 40px;
+}
+.Footer .copyrightFooter {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+.Footer .copyrightFooter ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
 }

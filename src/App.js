@@ -1,15 +1,15 @@
-// import logo from './logo.svg';
 import "./App.css";
 import Footer from "./layout/footer";
 import Header from "./layout/header";
-import Home from "./pages/Home";
+import About from "./pages/about";
+import Banner from "./pages/banner";
 
 function App() {
   return (
     <div className="App">
-      {/* <h1>this is heading</h1> */}
       <Header />
-      <Home />
+      <Banner />
+      <About />
       <Footer />
     </div>
   );

@@ -1,10 +1,12 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 const About = () => {
   return (
     <>
-      <h2>About js</h2>
-      989494984
+      <Container>
+        <h1>About Us Page</h1>
+      </Container>
     </>
   );
 };
